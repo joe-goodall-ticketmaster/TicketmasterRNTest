@@ -33,7 +33,7 @@ There is a bug with the native base tabs, so I leave it that way for a while, bu
 They are trying to fix it:
 ```
 https://github.com/GeekyAnts/NativeBase/issues/3358
-
+```
 ## 1.  Instructions to run the project:
 
 > yarn install
