@@ -50,13 +50,17 @@ const RegisterEvent = () => {
           </Col>
         </Row>
 
-        <Row>
+        <Row style={{ minHeight: 20 }}>
           {!loading && (
             <Button onPress={handleSubmit} style={styles.buttonStyle}>
               <Text>Send</Text>
             </Button>
           )}
-          <Spinner loading={loading} />
+          {loading && (
+            <Item>
+              <Spinner loading={true} />
+            </Item>
+          )}
         </Row>
       </Grid>
     </Content>
