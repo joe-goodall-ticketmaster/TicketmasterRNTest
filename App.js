@@ -1,6 +1,7 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import {createServer} from 'miragejs';
+import { Text, View } from 'react-native';
+import { createServer } from 'miragejs';
+import MainNavigation from './App/navigation/MainNavigation';
 
 if (window.server) {
   server.shutdown();
@@ -11,9 +12,9 @@ window.server = createServer({
     this.get('/api/waiting-list', () => {
       return {
         fans: [
-          {id: 1, emailAddress: 'a@a.com', mobileNumber: '07970676426'},
-          {id: 2, emailAddress: 'b@b.com', mobileNumber: '07734563976'},
-          {id: 3, emailAddress: 'c@c.com', mobileNumber: '07481904041'},
+          { id: 1, emailAddress: 'a@a.com', mobileNumber: '07970676426' },
+          { id: 2, emailAddress: 'b@b.com', mobileNumber: '07734563976' },
+          { id: 3, emailAddress: 'c@c.com', mobileNumber: '07481904041' },
         ],
       };
     });
@@ -34,13 +35,14 @@ export default function App() {
       .then(json => setFans(json.fans));
   }, []);
 
-  return (
-    <View>
-      {fans.map(fan => (
-        <Text key={fan.id}>
-          {fan.emailAddress} ({fan.mobileNumber})
-        </Text>
-      ))}
-    </View>
-  );
+  // return (
+  //   <View>
+  //     {fans.map(fan => (
+  //       <Text key={fan.id}>
+  //         {fan.emailAddress} ({fan.mobileNumber})
+  //       </Text>
+  //     ))}
+  //   </View>
+  // );
+  return <MainNavigation />;
 }

@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "clean:android": "cd android && ./gradlew clean && cd.. && yarn android",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -10,8 +11,18 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/drawer": "^5.12.5",
+    "@react-navigation/material-top-tabs": "^5.3.15",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.5",
+    "native-base": "^2.15.2",
     "react": "17.0.1",
-    "react-native": "0.64.1"
+    "react-native": "0.64.1",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.2.0",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-navigation": "^4.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -22,6 +33,7 @@
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
     "miragejs": "^0.1.41",
+    "react-native-screens": "^3.3.0",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
