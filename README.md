@@ -34,11 +34,11 @@ They are trying to fix it:
 ```
 https://github.com/GeekyAnts/NativeBase/issues/3358
 ```
-## 1.  Instructions to run the project:
+### 1.  Instructions to run the project:
 
 > yarn install
 > yarn clean:android 
 
-## 2. Instructions to run the unit test:
+### 2. Instructions to run the unit test:
 
 > yarn test 
