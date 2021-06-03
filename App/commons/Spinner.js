@@ -7,7 +7,7 @@ const SpeanerLoading = ({ loading }) => (
   <>
     {loading && (
       <View style={styles.sub}>
-        <Spinner color={'wi'} size={'large'} />
+        <Spinner color={'orange'} size={'large'} />
       </View>
     )}
   </>

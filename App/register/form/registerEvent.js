@@ -14,6 +14,7 @@ const RegisterEvent = () => {
   const mobileNumberHasErrors = touched.mobileNumber && errors.mobileNumber;
   return (
     <Content padder>
+      <Text style={styles.title}>Register Event</Text>
       <Grid item style={styles.fieldInput}>
         <Row style={styles.rowStyle}>
           <Col style={styles.colStyle}>
@@ -23,6 +24,7 @@ const RegisterEvent = () => {
                 onBlur={handleBlur('email')}
                 placeholder={'Email'}
                 name={'email'}
+                keyboardType={'email-address'}
                 onChangeText={handleChange('email')}
               />
             </Item>
@@ -30,6 +32,7 @@ const RegisterEvent = () => {
               <Text style={styles.errorText}>{errors.email}</Text>
             )}
           </Col>
+
           <Col style={styles.colStyle}>
             <Item rounded style={styles.itemInput}>
               <Input
@@ -37,6 +40,7 @@ const RegisterEvent = () => {
                 onBlur={handleBlur('mobileNumber')}
                 placeholder={'Mobile Number'}
                 name={'mobileNumber'}
+                keyboardType={'numeric'}
                 onChangeText={handleChange('mobileNumber')}
               />
             </Item>

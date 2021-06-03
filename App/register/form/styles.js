@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
   buttonStyle: {
     backgroundColor: 'orange',
   },
+  title: {
+    color: 'orange',
+  },
 });
 
 export default styles;
