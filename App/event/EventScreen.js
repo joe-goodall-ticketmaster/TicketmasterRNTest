@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { lumineers1, lumineers2 } from '../utils/srcImages';
 import {
   Content,
   Card,
@@ -11,11 +10,12 @@ import {
   Icon,
   Left,
   Body,
-
 } from 'native-base';
 import { StyleSheet, ScrollView } from 'react-native';
 
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import { bluetikets } from '../utils/colors';
+import { lumineers1, lumineers2 } from '../utils/srcImages';
 import RegisterEvent from '../register/form/registerEvent';
 export default class CardImageExample extends Component {
   render() {
@@ -99,6 +99,6 @@ const styles = StyleSheet.create({
     width: 70,
   },
   title: {
-    color: 'orange',
+    color: bluetikets,
   },
 });

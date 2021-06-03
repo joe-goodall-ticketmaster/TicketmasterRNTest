@@ -2,12 +2,13 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Spinner } from 'native-base';
 import PropTypes from 'prop-types';
+import { bluetikets } from '../utils/colors';
 
 const SpeanerLoading = ({ loading }) => (
   <>
     {loading && (
       <View style={styles.sub}>
-        <Spinner color={'orange'} size={'large'} />
+        <Spinner color={bluetikets} size={'large'} />
       </View>
     )}
   </>

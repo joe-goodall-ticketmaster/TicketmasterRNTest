@@ -51,9 +51,11 @@ const RegisterEvent = () => {
         </Row>
 
         <Row>
-          <Button onPress={handleSubmit} style={styles.buttonStyle}>
-            <Text>Get Tickets</Text>
-          </Button>
+          {!loading && (
+            <Button onPress={handleSubmit} style={styles.buttonStyle}>
+              <Text>Send</Text>
+            </Button>
+          )}
           <Spinner loading={loading} />
         </Row>
       </Grid>

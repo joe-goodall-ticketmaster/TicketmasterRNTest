@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { bluetikets } from '../../utils/colors';
 
 const styles = StyleSheet.create({
   itemInput: {
@@ -28,10 +29,10 @@ const styles = StyleSheet.create({
     margin: 3,
   },
   buttonStyle: {
-    backgroundColor: 'orange',
+    backgroundColor: bluetikets,
   },
   title: {
-    color: 'orange',
+    color: bluetikets,
   },
 });
 

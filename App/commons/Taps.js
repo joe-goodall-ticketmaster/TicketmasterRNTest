@@ -2,6 +2,7 @@ import React, { createElement } from 'react';
 import { StyleSheet } from 'react-native';
 import { Tab, Tabs } from 'native-base';
 import PropTypes from 'prop-types';
+import { bluetikets } from '../utils/colors';
 
 const customTab = (heading, children, key) =>
   createElement(
@@ -28,7 +29,7 @@ const TabsCommons = ({ data }) => {
   return (
     <Tabs
       tabContainerStyle={{ marginTop: 0 }}
-      tabBarUnderlineStyle={{ backgroundColor: '#feb24c' }}
+      tabBarUnderlineStyle={{ borderColor: bluetikets, borderBottomWidth: 1 }}
     >
       {tabs}
     </Tabs>

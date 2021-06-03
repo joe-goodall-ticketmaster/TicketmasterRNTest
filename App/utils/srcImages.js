@@ -4,7 +4,7 @@ const images = {
   lumineers2:
     'https://prismic-images.tmol.io/ticketmaster-tm-uk/3f7460aa-e779-4b4d-8d03-b36ac3518555_Lumineers_sleeponthefloor.jpg?rect=262,29,926,617&w=900&h=600&auto=compress&format=png',
   userIco:
-    'https://upload.wikimedia.org/wikipedia/commons/4/48/TamilGeo_Logo.png',
+    'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png',
 };
 
 module.exports = images;
