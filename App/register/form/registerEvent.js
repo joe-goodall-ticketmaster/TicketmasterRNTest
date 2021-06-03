@@ -4,6 +4,7 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import Spinner from '../../commons/Spinner';
 import useRegisterEvent from './hooks/useRegisterEvent';
 import styles from './styles';
+import { bluetikets } from '../../utils/colors';
 
 const RegisterEvent = () => {
   const { formik, loading } = useRegisterEvent();
@@ -26,6 +27,7 @@ const RegisterEvent = () => {
                 name={'email'}
                 keyboardType={'email-address'}
                 onChangeText={handleChange('email')}
+                selectionColor={bluetikets}
               />
             </Item>
             {emailHasErrors && (
@@ -42,6 +44,7 @@ const RegisterEvent = () => {
                 name={'mobileNumber'}
                 keyboardType={'numeric'}
                 onChangeText={handleChange('mobileNumber')}
+                selectionColor={bluetikets}
               />
             </Item>
             {mobileNumberHasErrors && (

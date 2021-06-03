@@ -24,3 +24,21 @@ The body should be JSON and contain `emailAddress` and `mobileNumber` fields
 
 - You're welcome to use any method of styling you feel comfortable with. We use styled-components at Ticketmaster but we don't expect you to learn a new library for this exercise!
 - You are encouraged to add comments in the code, or by extending this readme file explaining logic or reasoning for your decisions.
+______________________________________________________________________________________________________________________________________
+
+## Comments 
+
+There is a bug with the native base tabs, so I leave it that way for a while, but the ideal would be to use the navigation ones.
+
+They are trying to fix it:
+```
+https://github.com/GeekyAnts/NativeBase/issues/3358
+
+## 1.  Instructions to run the project:
+
+> yarn install
+> yarn clean:android 
+
+## 2. Instructions to run the unit test:
+
+> yarn test 

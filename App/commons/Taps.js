@@ -1,5 +1,4 @@
 import React, { createElement } from 'react';
-import { StyleSheet } from 'react-native';
 import { Tab, Tabs } from 'native-base';
 import PropTypes from 'prop-types';
 import { bluetikets } from '../utils/colors';
