@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'native-base';
 import { StyleSheet } from 'react-native';
 import EventScreen from './EventScreen';
-import RegisteredUserScreen from './RegisteredUserScreen';
+import ListRegistered from '../register/listRegistered/listRegistered';
 import Taps from '../commons/Taps';
 
 const screensTaps = () => {
@@ -13,7 +13,7 @@ const screensTaps = () => {
     },
     {
       heading: 'Registered Users',
-      component: <RegisteredUserScreen />,
+      component: <ListRegistered />,
     },
   ];
 };

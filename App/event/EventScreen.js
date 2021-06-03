@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { lumineers1, lumineers2 } from '../utils/srcImages';
 import {
-  Container,
   Content,
   Card,
   CardItem,
@@ -12,12 +11,12 @@ import {
   Icon,
   Left,
   Body,
-  Right,
+
 } from 'native-base';
 import { StyleSheet, ScrollView } from 'react-native';
 
 import { Col, Row, Grid } from 'react-native-easy-grid';
-
+import RegisterEvent from '../register/form/registerEvent';
 export default class CardImageExample extends Component {
   render() {
     return (
@@ -79,6 +78,7 @@ export default class CardImageExample extends Component {
                 </Text>
               </Body>
             </CardItem>
+            <RegisterEvent />
           </Card>
         </Content>
       </ScrollView>
